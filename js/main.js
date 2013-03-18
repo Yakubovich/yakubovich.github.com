@@ -1,9 +1,11 @@
+$(window).load(function() {
+  $("body").removeClass("preload");
+});
+
 $(document).ready(function() {
 
   var $callout = $(".callout");
   var $selected = $(".work-nav .selected");
-
-  $("body").removeClass("preload");
 
   resize();
   $(window).resize(resize);
