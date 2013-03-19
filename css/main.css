@@ -203,7 +203,19 @@ h1 span {
   background: white;
   font-size: 1.3em;
   position: relative;
+}
+
+#index #carousel {
   padding-top: 360px;
+}
+
+#work #carousel {
+  padding: 20px 0 50px 0;
+  background: #ececec;
+}
+
+#work #carousel ul {
+  margin: 0;
 }
 
 .carousel-item {
@@ -214,12 +226,22 @@ h1 span {
   top: 0;
   left: 0;
   width: 100%;
+  opacity: 0;
   -webkit-transition: 1s all;
      -moz-transition: 1s all;
          -transition: 1s all;
 }
 
+.carousel-item {
+  z-index: 1;
+}
+
+.carousel-item.selected {
+  z-index: 2;
+}
+
 .callout {
+  z-index: 100;
   display: block;
   position: absolute;
   background-image: url("../img/callout.png");
@@ -227,47 +249,54 @@ h1 span {
   height: 32px;
   width: 100%;
   left: 0;
-  top: 328px;
   -webkit-transition: .5s all;
      -moz-transition: .5s all;
          -transition: .5s all;
 }
 
-#carousel-yammer {
-  background: #0099C7;
-  color: white;
+#index .callout {
+  top: 328px;
+}
+
+#work .callout {
+  bottom: 0;
+}
+
+.carousel-item.selected {
   opacity: 1;
 }
 
-#carousel-geni {
+#index #carousel-yammer {
+  background: #0099C7;
+  color: white;
+}
+
+#index #carousel-geni {
   background: #005AAA;
   color: white;
-  opacity: 0;
 }
 
-#carousel-rs {
+#index #carousel-rs {
   background: #EF1E25;
   color: white;
-  opacity: 0;
 }
 
-#carousel-commonsku {
+#index #carousel-commonsku {
   background: #4C9DBB;
   color: white;
-  opacity: 0;
 }
 
-#carousel-yammer img {
+#index #carousel-yammer img {
   height: 80px;
   margin: 60px 0 30px 0;
 }
 
-#carousel-geni img {
+#index #carousel-geni img {
   height: 80px;
   margin: 60px 0 30px 0;
 }
 
-#carousel-commonsku img {
+#index #carousel-commonsku img {
   height: 100px;
   margin: 60px 0 20px 0;
 }
@@ -299,20 +328,20 @@ h1 span {
 
 /* ABOUT TEXT */
 
-#about {
+.about {
   background: white;
   padding: 40px 0;
   font-size: 1.3em;
   color: #666;
 }
 
-#about a {
+.about a {
   color: #F68D50;
   text-decoration: none;
   background: #FFF3E8;
 }
 
-#about a.button {
+.about a.button {
   background: #F68D50;
   margin: 20px auto;
   display: block;
@@ -338,11 +367,35 @@ h1 span {
 #footer {
   min-height: 200px;
   color: #999;
-  padding-top: 40px;
+  padding: 40px 0;
+  line-height: 2em;
 }
 
+#footer a {
+  color: #999;
+  text-decoration: none;
+}
 
+#footer ul {
+  padding: 0;
+  margin: 0;
+}
 
+#footer li {
+  list-style: none;
+}
+
+#footer li span {
+  font-size: .7em;
+  display: block;
+  line-height: .7em;
+  margin-bottom: 15px;
+}
+
+.footer-module {
+  float: left;
+  margin-right: 100px;
+}
 
 
 

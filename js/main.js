@@ -17,18 +17,26 @@ $(document).ready(function() {
     $callout.css("background-position", offset + "px 0");
   }
 
-  function select($el) {
-  };
-
   $(".work-nav a").click(function() {
     $selected = $(this);
     $(".work-nav a").removeClass("selected");
     $selected.addClass("selected");
     resize();
-
     var $slide = $("#carousel-" + $(this).attr("href").split("#")[1]);
-    $(".carousel-item").css("opacity", 0);
-    $slide.css("opacity", 1);
+    if ($("body").attr("id") == "index") {
+      $(".carousel-item").css("opacity", 0).removeClass("selected");
+      $slide.css("opacity", 1);
+    } else {
+      $(".about").hide().removeClass("selected");
+      $slide.show();
+    }
+    $slide.addClass("selected");
+  });
+
+  $("a[href=" + location.hash + "]").click();
+
+  $("#index .carousel-item").click(function() {
+    window.location.href = "work.html" + $selected[0].hash;
   });
 
 });
