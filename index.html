@@ -4,18 +4,16 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title></title>
-  <meta name="description" content="">
+  <title>Ilya Yakubovich: User Interface Designer</title>
+  <meta name="description" content="Hello! I'm Ilya Yakubovich, a user interface designer from Toronto.">
+  <meta name="keywords" content="ilya yakubovich, ui, user interface, designer, toronto, ux, user experience, web design, portfolio">
   <meta name="viewport" content="width=device-width">
-
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
-<body id="index" class="preload">
+<body id="index" class="preload" itemscope itemtype="http://data-vocabulary.org/Person">
   <!--[if lt IE 7]>
       <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
   <![endif]-->
@@ -24,8 +22,8 @@
     <div class="wrapper">
       <a href="#"><img id="me" src="img/me.jpg"></a>
       <h1>
-        Ilya Yakubovich<br>
-        <span>User Interface Designer</span>
+        <span itemprop="name">Ilya Yakubovich</span><br>
+        <span itemprop="title" class="title">User Interface Designer</span>
       </h1>
       <ul>
         <li><a href="#" class="selected">About</a></li>
@@ -71,10 +69,10 @@
   </div>
   <div class="about">
     <div class="wrapper">
-      <p>I am a designer with a computer science background, living in Toronto. I specialize in user interface design, user experience design, and front-end development for web and mobile applications.</p>
+      <p>I am a designer with a computer science background, living in <span itemprop="locality">Toronto</span>. I specialize in user interface design, user experience design, and front-end development for web and mobile applications.</p>
       <p>I primarily work with HTML5, CSS, and Javascript (including jQuery, Backbone.js, and other frameworks). I've also worked with Ruby on Rails, PHP, and C.</p>
-      <p>I was an early employee at several startups, including <a href="http://www.geni.com" target="_blank">Geni.com</a> — a collaborative family tree site — and <a href="http://www.yammer.com" target="_blank">Yammer.com</a> — a social network for internal enterprise collaboration that has been acquired by Microsoft and is currently used by over 200,000 businesses worldwide.</p>
-      <p>Currently, I'm the lead designer at <a href="http://www.commonsku.com" target="_blank">commonsku.com</a>, a CRM, order management, and social collaboration tool for the promotional products industry.</p>
+      <p>I was an early employee at several startups, including <a href="http://www.geni.com" target="_blank" itemprop="affiliation">Geni.com</a> — a collaborative family tree site — and <a href="http://www.yammer.com" target="_blank" itemprop="affiliation">Yammer.com</a> — a social network for internal enterprise collaboration that has been acquired by Microsoft and is currently used by over 200,000 businesses worldwide.</p>
+      <p>Currently, I'm the lead designer at <a href="http://www.commonsku.com" target="_blank" itemprop="affiliation">commonsku.com</a>, a CRM, order management, and social collaboration tool for the promotional products industry.</p>
       <a href="work.html" class="button">View My Portfolio</a>
     </div>
   </div>
@@ -105,9 +103,9 @@
       <div class="footer-module">
         <h2>Other Awesome People</h2>
         <ul>
-          <li><a target="_blank" href="http://julieannhorvath.com/">Julie Horvath</a><span>designer at github</span></li>
-          <li><a target="_blank" href="http://www.peterdu.com/">Peter Du</a><span>illustrator</span></li>
-          <li><a target="_blank" href="http://elderlab.yorku.ca/~alex/">Alex Yakubovich</a><span>my brother</span></li>
+          <li><a target="_blank" rel="friend" href="http://julieannhorvath.com/">Julie Horvath</a><span>designer at github</span></li>
+          <li><a target="_blank" rel="friend" href="http://www.peterdu.com/">Peter Du</a><span>illustrator</span></li>
+          <li><a target="_blank" rel="friend" href="http://elderlab.yorku.ca/~alex/">Alex Yakubovich</a><span>my brother</span></li>
         </ul>
       </div>
 

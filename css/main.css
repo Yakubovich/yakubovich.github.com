@@ -149,7 +149,7 @@ h1 {
   text-transform: uppercase;
 }
 
-h1 span {
+h1 span.title {
   color: #797979;
   font-size: .83em;
   text-transform: none;
