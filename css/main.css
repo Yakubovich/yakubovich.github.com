@@ -360,6 +360,10 @@ h1 span.title {
   margin-top: 23px;
 }
 
+.about img {
+  border: 1px solid #eee;
+}
+
 /* FOOTER */
 
 #footer {
