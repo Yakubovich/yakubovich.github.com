@@ -362,6 +362,39 @@ h1 span.title {
 
 .about img {
   border: 1px solid #eee;
+  margin:auto;
+}
+
+a.preview {
+  background: none;
+  display:block;
+  position: relative;
+}
+
+a.preview:after {
+  content:"View Full Size";
+  display:block;
+  position: absolute;
+  top: 190px;
+  left: 355px;
+  text-align:center;
+  background: rgba(0,0,0,.5);
+  padding: 50px;
+  color: white;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+  opacity: 0;
+}
+
+a.preview:hover:after {
+  opacity: 1;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
 }
 
 /* FOOTER */
