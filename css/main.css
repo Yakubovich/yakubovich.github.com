@@ -363,6 +363,7 @@ h1 span.title {
 .about img {
   border: 1px solid #eee;
   margin:auto;
+  width: 100%;
 }
 
 a.preview {
@@ -376,7 +377,7 @@ a.preview:after {
   display:block;
   position: absolute;
   top: 190px;
-  left: 355px;
+  left: 390px;
   text-align:center;
   background: rgba(0,0,0,.5);
   padding: 50px;
