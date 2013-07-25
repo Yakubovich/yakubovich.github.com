@@ -217,7 +217,7 @@ h1 span.title {
 }
 
 .carousel-item {
-  height: 360px;
+  height: 412px;
   margin-bottom: 40px;
   cursor: pointer;
   position: absolute;
@@ -238,6 +238,28 @@ h1 span.title {
   z-index: 2;
 }
 
+.carousel-item a {
+  display: inline-block;
+  border: 1px solid rgba(255,255,255, .25);
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: .7em;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+}
+
+.carousel-item:hover a {
+  border: 1px solid rgba(255,255,255, .4);
+  background: rgba(255,255,255,.1);
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+}
+
 .callout {
   z-index: 100;
   display: block;
@@ -253,7 +275,7 @@ h1 span.title {
 }
 
 #index .callout {
-  top: 328px;
+  top: 380px;
 }
 
 #work .callout {
@@ -296,11 +318,15 @@ h1 span.title {
 
 #index #carousel-commonsku img {
   height: 100px;
-  margin: 60px 0 20px 0;
+  margin: 60px 0 10px 0;
+}
+
+#index #carousel-rs img {
+  margin: 0 0 20px 0;
 }
 
 .work-nav {
-  margin: 16px 0 0 0;
+  margin: 60px 0 0 0;
 }
 
 #carousel li {
