@@ -147,12 +147,13 @@ h1 {
   float: left;
   margin: 43px 40px;
   text-transform: uppercase;
+  letter-spacing: .05em;
 }
 
 h1 span.title {
   color: #797979;
-  font-size: .83em;
-  text-transform: none;
+  font-size: 0.6em;
+  word-spacing: .62em;
 }
 
 #header ul {
@@ -174,6 +175,7 @@ h1 span.title {
   width: 110px;
   text-align: center;
   padding: 45px 0;
+  letter-spacing: .1em;
   -webkit-transition: .5s all;
      -moz-transition: .5s all;
          -transition: .5s all;
