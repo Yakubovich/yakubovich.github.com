@@ -286,22 +286,22 @@ h1 span.title {
   opacity: 1;
 }
 
-#index #carousel-yammer {
+#index #carousel-yammer, .bg-yammer {
   background: #0099C7;
   color: white;
 }
 
-#index #carousel-geni {
+#index #carousel-geni, .bg-geni {
   background: #005AAA;
   color: white;
 }
 
-#index #carousel-rs {
+#index #carousel-rs, .bg-rs {
   background: #EF1E25;
   color: white;
 }
 
-#index #carousel-commonsku {
+#index #carousel-commonsku, .bg-commonsku {
   background: #4C9DBB;
   color: white;
 }
