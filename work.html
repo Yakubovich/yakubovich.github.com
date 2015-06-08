@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width">
   <meta name="description" content="Hello! I'm Ilya Yakubovich, a user interface designer from Toronto and this is my portfolio.">
   <meta name="keywords" content="ilya yakubovich, portfolio, ui, user interface, designer, toronto, ux, user experience, web design, yammer">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -29,88 +30,225 @@
       </ul>
     </div>
   </div>
-  <div id="carousel">
+  <div id="carousel" class="bg-commonsku" name="main-carousel">
     <div class="callout"></div>
     <div class="wrapper">
       <ul class="work-nav">
-        <li><a href="#yammer" class="selected"><img src="img/logo-black-yammer.png" height=56 width=312></a></li>
-        <li><a href="#commonsku"><img src="img/logo-black-commonsku.png" height=56 width=192></a></li>
-        <li><a href="#rs"><img src="img/logo-black-rs.png" height=56 width=128></a></li>
-        <li><a href="#geni"><img src="img/logo-black-geni.png" height=56 width=216></a></li>
+        <li><a href="#commonsku" class="selected"><img src="img/logo-white-commonsku.png" height=56 width=192></a></li>
+        <li><a href="#rs"><img src="img/logo-white-rs.png" height=56 width=128></a></li>
+        <li><a href="#afti"><img src="img/logo-white-afti.png" height=56 width=128></a></li>
+        <li><a href="#yammer"><img src="img/logo-white-yammer.png" width=270></a></li>
+        <li><a href="#geni"><img src="img/logo-white-geni.png" height=56 width=216></a></li>
       </ul>
     </div>
   </div>
-  <div class="about" id="carousel-yammer">
+  <div class="about" id="carousel-yammer" style="display:none;">
     <div class="wrapper">
-      <p><a href="http://www.yammer.com" target="_blank">Yammer</a> is a social network for internal enterprise collaboration. It's one of the first products to bring the web 2.0 app experience to the enterprise.</p>
-      <p>As a member of the founding team, I saw the product grow from a concept to a powerful tool used by 200,000 business worldwide, and the team grow from a handful of engineers to 150 employees. The company has been acquired by Microsoft in 2012.</p>
-      <p>I was in charge of product management, visual design, user experience / interaction design, and some front-end implementation (HTML/CSS/Ruby).</p>
-      <br>
-      <img src="img/yammer-in-comp.png" width="100%" alt="Yammer screenshot" class="in-monitor" style="border:none;">
-      <p style="text-align:center;">Yammer revolutionized enterprise social networking by bringing consumer-style design and interaction behind the firewall. By using a familiar interfaces inspired by applications like Twitter, Tumblr, and Facebook, we flattened the software's learning curve and allowed users to start socializing right after signing up. </p>
+      <div class="about-project">
+        <h2>About Yammer</h2>
+        <p>Yammer is a private social network that helps employees collaborate across departments, locations, and business apps.</p>
+        <p>Yammer has been acquired by Microsoft in 2012, and is currently used at over 200,000 companies worldwide, including 85% of the Fortune 500. It has over 8 million users.</p>
+      </div>
+
+      <div class="about-role">
+        <h2>My Role</h2>
+        <p>As a member of the Yammer founding team (4th hire), I worked closely with the CEO to define the vision for the product, interface, and user experience. I communicated requirements to the engineering team through high fidelity mockups, interaction diagrams, user flow diagrams, and detailed specs.</p>
+        <p>Throughout my career at Yammer the product went through several major design and functionality changes. I evaluated designs through A/B tests, user tests, and feedback from customers.</p>
+      </div>
+
+      <div style="clear:both;"></div>
+
+      <h2>"My Feed"</h2>
+      <p>Yammer is where teamwork happens. It’s a central place for teams to share updates, ask questions, get feedback, and collaborate on files.</p>
+      <img src="img/screenshot-yammer-main.png">
+
+      <h2>Search (Flow)</h2>
+      <p>Yammer users can find everything they need, including information in other business applications, without leaving Yammer. </p>
+      <img src="img/screenshot-yammer-search.png" style="width: 50%;">
+
+      <h2>Poll (Flow)</h2>
+      <p>The Yammer publisher allows users to create a variety of content, like polls, questions, ideas, and events. This is an example of the kind of diagram that would be attached to a spec when the company became larger and specs had to become more precise.</p>
+      <img src="img/screenshot-yammer-poll.png">
+
+      <h2>Notifications, Networks, and User Dropdowns (Flow)</h2>
+      <p>Part of a spec for a set of improvements to the page header.</p>
+      <img src="img/screenshot-yammer-dropdown.png">
+
+      <h2>Publisher (A/B Test Specification)</h2>
+      <p>A specification for a 3x2 A/B test with 6 variations. As the product became more mature and gained more users, we conducted extensive A/B tests to ensure that proposed changes resulted in measurable improvements. </p>
+      <img src="img/screenshot-yammer-ab.png">
+
+      <h2>Desktop App (Flex Application)</h2>
+      <p>An early design for the Yammer desktop application.</p>
+      <img src="img/screenshot-yammer-desktop.png" style="width: 70%;">
+
+      <a class="button next">Next Project</a>
+
+    </div>
+  </div>
+
+  <div class="about" id="carousel-afti" style="display:none;">
+    <div class="wrapper">
+
+      <div class="about-project">
+        <h2>About Afti</h2>
+        <p>Afti is a web application that uses notch therapy to reduce the intensity of <a href="https://en.wikipedia.org/wiki/Tinnitus" target="_blank">tinnitus</a>, currently under development. The first version of the application is going to be web based, and an iPhone app is planned for the future.</p>
+      </div>
+
+      <div class="about-role">
+        <h2>My Role</h2>
+        <p>I started this project with several friends, and am the sole developer and designer. I've created wireframes, high-fidelity mockups, and implemented it in Ruby on Rails.</p>
+      </div>
+
+      <div style="clear:both;"></div>
+
+      <img src="img/screenshot-afti-1.png">
+
+      <h2>Signup Flow Step</h2>
+      <p>The user starts by entering the frequency of their tinnitus (tested by a doctor).</p>
+      <img src="img/screenshot-afti-2.png">
+
+      <h2>Playlist</h2>
+      <p>Users can upload their own tracks, which we then process by <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2824261/" target="_blank">notching</a>. They can then regularly listen to the notched files using the Afti interface to reduce the intensity of their tinnitus.</p>
+      <img src="img/screenshot-afti-3.png">
+
+      <a class="button next">Next Project</a>
+
     </div>
   </div>
   <div class="about" id="carousel-geni" style="display:none;">
     <div class="wrapper">
-      <img src="img/screenshot-geni-2.png" style="width: 560px; float:right; margin-left: 40px; margin-bottom: 40px;">
-      <img src="img/geni-cosby.png" style="width: 560px; float:right; margin-left: 40px; margin-bottom: 40px; border:none; padding: 0;">
-      <p>Everyone's related, but we don't always know how.</p>
-      <p><a href="http://www.geni.com">Geni</a> helps people rediscover those lost connections, and share family stories through collaborative family trees, photos, timelines, maps, etc.</p>
-      <p>The ultimate goal is to connect the world's family trees, allowing users to see their relationship to any other user, relative, or historical figure. As of 2012, the connected portion of the tree spanned 66 million profiles.</p>
-      <p>I joined the Geni team as a product manager in 2007 and helped in the conception, design, and implementation of new features like Timelines, Places, Tree Printing, and Tree Merging.</p>
-      <p>Geni has been acquired by MyHeritage in 2012.</p>
-      <br><br>
-      <center>
-      <br><br>
-      <img src="img/screenshot-geni-1.png" alt="Geni screenshot" style="border:0;">
-      </center>
+
+      <div class="about-project">
+        <h2>About Geni</h2>
+        <p>Everyone's related, but we don't always know how. <a href="http://www.geni.com" target="_blank">Geni</a> helps people rediscover those lost connections, and share family stories through collaborative family trees, photos, timelines, maps, etc.</p>
+        <p>The ultimate goal is to connect the world's family trees, allowing users to see their relationship to any other user, relative, or historical figure. As of 2015, the connected portion of the tree spanned 90 million profiles. Geni was acquired by MyHeritage in 2012.</p>
+      </div>
+
+      <div class="about-role">
+        <h2>My Role</h2>
+        <p>I joined the Geni team as a product manager in 2007 and helped in the conception, design, and implementation of new features like Timelines, Places, Tree Printing, and Tree Merging.</p>
+      </div>
+
+      <div style="clear:both;"></div>
+
+      <h2>Profile Timeline</h2>
+      <p>A person's life's events arranged chronologically. Events can be associated with photos, and multiple people, causing them to appear on each person's timeline.</p>
+      <img src="img/screenshot-geni-profile.png">
+
+      <h2>Places</h2>
+      <p>A map showing all the places related to the user's family. Clicking on a place shows relatives who lived there, photos from the location, and events that took place there.</p>
+      <img src="img/screenshot-geni-map.png">
+
+      <h2>Matches</h2>
+      <p>Geni sometimes finds people form the user's tree on other trees. It then highlights those profiles on the tree and allows tree merging.</p>
+      <img src="img/screenshot-geni-matches.png">
+
+      <h2>Family tree badges indicating location</h2>
+      <img src="img/screenshot-geni-tree.png">
+
     </div>
   </div>
-  <div class="about" id="carousel-commonsku" style="display:none;">
+  <div class="about" id="carousel-commonsku">
     <div class="wrapper">
-      <p>I'm currently the UI designer for <a href="http://www.commonsku.com">commonsku.com</a>.</p>
-      <p>commonsku is a web-based business management platform powering the promo industry.</p>
-      <p>In addition to being a complete suite of order management and CRM software, it enables easy collaboration and networking with promotional products professionals, who use it to  share best practices, find great products, build closer relationships, and learn from industry experts and peers. 
-      <br>
-      <br>
-      <a href="img/screenshot-commonsku-4.png" target="screenshot" class="preview"><img src="img/commonsku-in-comp3.png" style="border:none;"></a>
-      <p style="text-align:center;">The commonsku home page combines a quick and free sign-up form with a detailed overview of the order management and CRM offering using clean, flat graphics.</p>
-      <br>
-      <br>
-      <br>
-      <br>
-      <a href="img/screenshot-commonsku-3.png" target="screenshot" class="preview"><img src="img/commonsku-in-comp.png" style="border:none;"></a>
-      <p style="text-align:center;">The commonsku newsfeed includes order management and CRM activity, as well as industry and internal social networking. The simple and familiar design allows users to get started without wasting time learning a new interface.</p>
-      <br>
-      <br>
-      <br>
-      <br>
-      <a href="img/screenshot-commonsku-2.png" target="screenshot" class="preview"><img src="img/commonsku-in-comp2.png" style="border:none;"></a>
-      <p style="text-align:center;">Using the social directory, users can quickly connect with others in the promotional products industry through suggestions, and searching by name and company.</p>
+
+      <div class="about-project">
+        <h2>About Commonsku</h2>
+        <p><a href="http://www.commonsku.com" target="_blank">Commonsku</a> is a web-based CRM, order management, and social collaboration tool for the promotional products industry. It allows promotional products distributors to eliminate inefficient paper or spreadsheet-based systems and streamlines their order management process.  </p>
+        <p>It also functions as a community for collaboration and networking between promotional products distributors and suppliers.</p>
+      </div>
+
+      <div class="about-role">
+        <h2>My Role</h2>
+        <p>I joined commonsku in 2011, pre-launch, and am solely responsible for UI and UX design and front-end development (PHP, Javascript, jQuery, Backbone.js, and CSS).</p>
+        <p>I established the brand guidelines, and implemented the public-facing marketing site, HTML emails, and landing pages for various marketing campaigns.</p>
+        <p>I communicated my designs through sketches, wireframes, comps, interactive mockups, interactive HTML prototypes, and style tiles. I then continuously evaluated and revised the designs based on user feedback, user tests, and journey maps.
+      </div>
+
+      <div style="clear:both;"></div>
+
+      <h2>Home Page &amp; Public Facing Site</h2>
+      <p>The commonsku public facing site is targeted at two different types of clients: promotional products distributors, and promotional products suppliers. Visitors start the flow by selecting the type of company that they work for. They can then read the ways in which Commonsku can help them run their business.</p>
+      <img src="img/screenshot-commonsku-main.png">
+
+      <h2>Signup Flow</h2>
+      <p>The signup flow orients the user with a sequence map at the top of the page, and our robot mascot guides the user through the steps.</p>
+      <img src="img/screenshot-commonsku-signup.png">
+      <p>One of the signup flow steps:</p>
+      <img src="img/screenshot-commonsku-signup2.png">
+
+      <h2>Newsfeed</h2>
+      <p>The community newsfeed, available to both free and paid users, is a private space where the promotional product industry can exchange ideas, source products, and make connections.</p>
+      <p>It's used to share best practices, find great products, build closer relationships, and learn from industry experts and peers.</p>
+      <img src="img/screenshot-commonsku-newsfeed.png">
+
+      <h2>People Directory</h2>
+      <p>This page shows a map and a grid of user profile pictures. When the user zooms and scrolls the map, the grid of faces changes to reflect the newly selected area. When the user searches for a person or company, the grid shows the results, and the map resizes to the appropriate area.</p>
+      <p>The directory shows how large the community is and where most users are located. The search functionality makes it especially useful for finding familiar companies, or companies nearby.</p>
+      <img src="img/screenshot-commonsku-people.png">
+
+      <h2>Dashboard</h2>
+      <p>The order management dashboard consists of a collection of tiles that the user can rearrange and collapse. The dashboard shows how the business is doing at a glance, so it's particularly useful for managers.</p>
+      <p>When the user clicks on items within the tiles, the details for the selected item slide into view within the tile. This way, many operations can be done without ever leaving the dashboard.</p>
+      <img src="img/screenshot-commonsku-dashboard.png">
+
+      <h2>Client Page</h2>
+      <p>Distributor can create pages for their clients. The client page is used to track orders, contacts, notes, addresses, and other information about the client. Other companies like suppliers and distributors get similar pages.</p>
+      <img src="img/screenshot-commonsku-client.png">
+
+      <h2>Sales Order</h2>
+      <p>Product presentations, estimates, sales orders, purchase orders, and invoices flow seamlessly from one to the other, eliminating the need to double-enter information.</p>
+      <img src="img/screenshot-commonsku-order.png">
+
+      <h2>Product Search</h2>
+      <p>Commonsku integrates with several product databases, so that distributors can find the best products for their clients. They can also create their own collections, bookmark products, and access products form previous orders.</p>
+      <img src="img/screenshot-commonsku-products.png">
+
+      <a class="button next">Next Project</a>
+
     </div>
   </div>
   <div class="about" id="carousel-rs" style="display:none;">
     <div class="wrapper">
-      <p>I designed the website and online store for <a href="http://www.rightsleeve.com">RIGHTSLEEVE</a>, a Toronto-based promotional products agency, as well as their summer camp merchandise division, <a href="http://www.camprightsleeve.com">Camp RIGHTSLEEVE</a>.</p>
-      <br>
-      <a href="img/screenshot-rs-1.png" target="screenshot" class="preview"><img src="img/rs-in-comp1.png" style="border:none;"></a>
-      <p style="text-align:center;">The RIGHTSLEEVE home page showcases the company's recognizable clients. Unlike typical carousel elements, this design enabling easy and intuitive switching between slides. The thumbnail list smoothly scrolls as slides are switched, allowing for an unlimited number of slides.</p>
-      <br><br><br>
-      <a href="img/screenshot-rs-3.png" target="screenshot" class="preview"><img src="img/rs-in-comp3.png" style="border:none;"></a>
-      <p style="text-align:center;">RIGHTSLEEVE's camp merchandise division has its own branding and a custom experience running off the same code base. Both sites have a clear and simple call to action, prompting users to contact RIGHTSLEEVE's sales representatives.</p>
-      <br><br><br>
-      <a href="img/screenshot-rs-2.png" target="screenshot" class="preview"><img src="img/rs-in-comp2.png" style="border:none;"></a>
-      <p style="text-align:center;">Promotional products are displayed using a style similar to that of retail sites, creating an experience that's both familiar and elegant.</p>
-      <br><br><br>
-      <a href="img/screenshot-rs-4.png" target="screenshot"><img src="img/screenshot-rs-4.png" style="width:25%; border: 0; padding: 5px; float:left;"></a>
-      <a href="img/screenshot-rs-5.png" target="screenshot"><img src="img/screenshot-rs-5.png" style="width:25%; border: 0; padding: 5px; float:left;"></a>
-      <a href="img/screenshot-rs-6.png" target="screenshot"><img src="img/screenshot-rs-6.png" style="width:25%; border: 0; padding: 5px; float:left;"></a>
-      <a href="img/screenshot-rs-7.png" target="screenshot"><img src="img/screenshot-rs-7.png" style="width:25%; border: 0; padding: 5px; float:left;"></a>
+
+      <div class="about-project">
+        <h2>About the RIGHTSLEEVE</h2>
+        <p><a href="http://www.rightsleeve.com" target="_blank">RIGHTSLEEVE</a> is an award winning promotional products agency with a focus on design and branded merchandise collections. The company has been around for over 15 years.</p>
+      </div>
+
+      <div class="about-role">
+        <h2>My Role</h2>
+        <p>I redesigned and implemented the RIGHTSLEEVE website. My goal was to create a clean and modern look while staying true to the company's well established brand guidelines. I also took the photos features on the front page.</p>
+      </div>
+
       <div style="clear:both;"></div>
-      <p style="text-align:center; clear:both;">Adhering to RIGHTSLEEVE's brand guidelines, the sites uses a clean and simple, magazine inspired layout. Smooth and unobtrusive animations are used throughout the site to create a delightful experience. </p>
-      <br>
-      <br>
-      <div style="clear:both;"></div>
+
+      <h2>RIGHTSLEEVE.COM Homepage</h2>
+      <p>RIGHTSLEEVE has done work for impressive clients like Red Bull, Koodo, Expedia, and Telus. We decided to showcase the clients and the work we did for them on a large carousel on the front page, as this is the most compelling reasons to trust the company. </p>
+      <img src="img/screenshot-rs-corporate.png">
+
+      <h2>CAMPRIGHTSLEEVE.COM Homepage</h2>
+      <p>RIGHTSLEEVE does a lot of work with camps, under the brand CAMP RIGHTSLEEVE. The camp site uses the same codebase, but has its own stylesheet.</p>
+      <img src="img/screenshot-rs-camp.png">
+
+      <h2>Work Page</h2>
+      <p>A showcase of various projects that RIGHTSLEEVE has done. The focus here is not on the clients (as many of the clients don't want to be identified) but on the innovative product ideas. Clicking on an image shows the rest of the products from the collection.</p>
+      <img src="img/screenshot-rs-products.png">
+      <p>A directory of products offered by RIGHTSLEEVE, inspired by retail sites.</p>
+      <img src="img/screenshot-rs-ecommerce.png">
+
+      <h2>Company Page</h2>
+      <img src="img/screenshot-rs-about.png">
+
+      <h2>Press Page</h2>
+      <img src="img/screenshot-rs-press.png">
+
+      <h2>Staff Page</h2>
+      <p>Clicking on a portrait on <a target="_blank" href="http://rightsleeve.com/company.php#staff">this page</a> shows information about the person using a smooth Javascript transition.</p>
+      <img src="img/screenshot-rs-staff.png">
+
+      <a class="button next">Next Project</a>
+
     </div>
   </div>
   <div id="footer">
@@ -130,14 +268,14 @@
       <div class="footer-module">
         <h2>Hobbies &amp; Projects</h2>
         <ul>
-          <li><a target="_blank" href="http://flickr.com/yakubovich">My Photography</a></li>
+          <li><a target="_blank" href="http://500px.com/yakubovich">My Photography</a></li>
           <li><a target="_blank" href="http://yakubovich.github.com/tanakh">Online Hebrew Bible</a></li>
           <li><a target="_blank" href="http://yakubovich.github.com/lildungeon/">Zombies! (a game)</a></li>
           <li><a target="_blank" href="http://yakubovich.github.com/defend-earth/">Defend Earth! (a game)</a></li>
         </ul>
       </div>
 
-      <div class="footer-module">
+      <div class="footer-module" style="display: none;">
         <h2>Awesome People</h2>
         <ul>
           <li><a target="_blank" href="http://julieannhorvath.com/">Julie Horvath</a><span>designer at github</span></li>
