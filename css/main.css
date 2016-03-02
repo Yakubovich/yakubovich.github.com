@@ -142,12 +142,12 @@ p {
 }
 
 h1 {
-  color: #F68D50;
+  color: black;
   font-weight: normal;
   float: left;
   margin: 43px 40px;
   text-transform: uppercase;
-  letter-spacing: .05em;
+  letter-spacing: .08em;
 }
 
 h1 span.title {
