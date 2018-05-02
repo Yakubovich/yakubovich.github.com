@@ -100,8 +100,7 @@ textarea {
    ========================================================================== */
 
 body {
-  background: white;
-  padding: 15px;
+  background: #f1f1f1;
   font-family: 'Lato', sans-serif;
 }
 
@@ -118,6 +117,7 @@ p {
 
 .wrapper {
   max-width: 1000px;
+  padding: 25px;
   margin: auto;
   clear: both;
 }
