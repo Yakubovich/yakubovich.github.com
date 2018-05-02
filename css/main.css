@@ -134,8 +134,9 @@ p {
 
 #me {
   float: left;
-  width:  160px;
-  height: 160px;
+  width:  70px;
+  height: 70px;
+  margin-top: 43px;
 }
 
 h1 {
