@@ -167,7 +167,6 @@ h1 span.title {
   display: block;
   text-decoration: none;
   color: #424242;
-  text-transform: uppercase;
   height: 110px;
   width: 110px;
   text-align: center;
@@ -176,9 +175,6 @@ h1 span.title {
   -webkit-transition: .5s all;
      -moz-transition: .5s all;
          -transition: .5s all;
-  -webkit-border-radius: 100px;
-     -moz-border-radius: 100px;
-          border-radius: 100px;
 }
 
 #header li a:hover {
@@ -189,8 +185,7 @@ h1 span.title {
 }
 
 #header li a.selected {
-  background: #F68D50;
-  color: white;
+  border-bottom: 5px solid #e34234;
 }
 
 /* CAROUSEL */
