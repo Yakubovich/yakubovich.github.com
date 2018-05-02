@@ -359,13 +359,17 @@ h1 span.title {
 }
 
 .about a {
-  color: #F68D50;
+  color: #92a5e6;
+  font-weight: bold;
   text-decoration: none;
-  background: #FFF3E8;
+}
+
+.about a:hover {
+   background: #f2f5ff;
 }
 
 .about a.button {
-  background: #F68D50;
+  background: #8e97b5;
   margin: 20px auto;
   display: block;
   text-align:center;
@@ -373,8 +377,9 @@ h1 span.title {
   padding: 20px;
   color: white;
   text-decoration: none;
-  border-bottom: 3px solid #D17844;
+  border-bottom: 3px solid #556390;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .button:hover {
