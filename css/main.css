@@ -136,9 +136,6 @@ p {
   float: left;
   width:  160px;
   height: 160px;
-  -webkit-border-radius: 100px;
-     -moz-border-radius: 100px;
-          border-radius: 100px;
 }
 
 h1 {
